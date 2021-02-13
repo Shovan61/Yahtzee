@@ -1,0 +1,40 @@
+.RulesRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.RulesRow tr {
+    display: flex;
+    justify-content: space-between;
+    width: 65vh;
+    border-bottom: 1px solid #000;
+    
+}
+
+.RulesRow tr:first-child{
+    cursor: pointer;
+}
+
+
+.table-row-disabled{
+    background: linear-gradient(217deg, rgba(216, 221, 255, 0.8), rgba(149, 179, 245, 0.897) 70.71%);
+    background-size: 300% 300%; 
+    animation: Slide 1s ease-in;     
+}
+
+@keyframes Slide {
+    from{
+     background-position: 100% 50%;
+    } to {
+     background-position: 0% 51%;
+    }
+
+}
+
+
+.table-row-disabled td:first-child{
+    text-decoration: line-through;
+    cursor: not-allowed;
+}

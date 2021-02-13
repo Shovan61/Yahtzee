@@ -1,0 +1,31 @@
+.Die{
+    color: rgb(241, 239, 239);
+    text-shadow: 2px 5px 12px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    
+}
+
+.Die-rolling{
+    animation: spin 1s ease-out;
+}  
+
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+.Die-locked{
+    opacity: 0.5;
+    text-shadow: none;
+    
+}
+
+.Die-no-cursor{
+    cursor: not-allowed;
+}

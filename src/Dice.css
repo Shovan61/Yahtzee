@@ -1,0 +1,6 @@
+.Dice{
+    display: flex;
+    align-items: center;
+    width: 60vh;
+    justify-content: space-evenly;
+}
